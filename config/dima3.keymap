@@ -43,10 +43,10 @@
         };
         num_layer {
  bindings = <
-&kp RA(GRAVE) &kp KP_SLASH     &kp KP_N7  &kp KP_N8 &kp KP_N9 &kp KP_MINUS                                 &kp RA(T) &mkp MB1        &mmv MOVE_UP       &mkp MB2       &trans       &kp RA(LBKT)
-&kp K_CALC &kp KP_ASTERISK  &kp KP_N4  &kp KP_N5 &kp KP_N6 &kp KP_PLUS                                  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN     &mmv MOVE_RIGHT &trans       &trans
-&kp KP_NUM    &kp KP_N0        &kp KP_N1  &kp KP_N2 &kp KP_N3 &kp DOT      &trans                   &trans &trans &kp RA(M) &kp RA(COMMA) &kp RA(DOT) &kp RA(FSLH) &kp RA(RBKT)
-                                        &trans   &trans    &trans       &trans  &trans  &trans   &trans &trans    &trans &kp RA(BSLH)
+&kp RA(GRAVE)  &kp KP_SLASH      &kp KP_N7   &kp KP_N8  &kp KP_N9  &kp KP_MINUS                                  &kp RA(T)  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans         &kp RA(LBKT)
+&kp K_CALC     &kp KP_ASTERISK   &kp KP_N4   &kp KP_N5  &kp KP_N6  &kp KP_PLUS                                   &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans         &trans
+&kp KP_NUM     &kp KP_N0         &kp KP_N1   &kp KP_N2  &kp KP_N3  &kp DOT      &trans                  &trans   &trans     &kp RA(M)       &kp RA(COMMA)   &kp RA(DOT)      &kp RA(FSLH)   &kp RA(RBKT)
+                                        &trans   &trans    &trans       &trans  &trans  &trans   &trans &trans   &trans     &kp RA(BSLH)
   >;
         };
 
