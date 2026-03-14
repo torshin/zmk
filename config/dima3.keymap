@@ -14,7 +14,6 @@
 #define RAISE   2
 #define NUM     3
 #define THIRD   4
-#define GAME    5
 
 / {
     keymap {
