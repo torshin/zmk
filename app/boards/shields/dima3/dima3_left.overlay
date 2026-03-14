@@ -4,6 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
+
 #include "dima3.dtsi"
 
 &kscan0 {
