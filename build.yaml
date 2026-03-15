@@ -13,9 +13,9 @@
 #
 ---
 include:
-  - board: nrf52840
+  - board: nice_nano
     shield: dima3_left
-  - board: nrf52840
+  - board: nice_nano
     shield: dima3_right
-  - board: nrf52840
+  - board: nice_nano
     shield: settings_reset
