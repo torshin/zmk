@@ -13,9 +13,9 @@
 #
 ---
 include:
-  - board: nice_nano_v2
+  - board: nrfmicro
     shield: dima3_left
-  - board: nice_nano_v2
+  - board: nrfmicro
     shield: dima3_right
-  - board: nice_nano_v2
+  - board: nrfmicro
     shield: settings_reset
