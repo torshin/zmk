@@ -13,9 +13,9 @@
 #
 ---
 include:
-  - board: nrfmicro
+  - board: nrf52840
     shield: dima3_left
-  - board: nrfmicro
+  - board: nrf52840
     shield: dima3_right
-  - board: nrfmicro
+  - board: nrf52840
     shield: settings_reset
