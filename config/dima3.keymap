@@ -9,8 +9,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define GAME    0
-#define DEFAULT 1
+#define DEFAULT 0
+#define GAME    1
 #define LOWER   2
 #define RAISE   3
 #define NUM     4
@@ -19,14 +19,7 @@
 / {
     keymap {
         compatible = "zmk,keymap";
-          game_layer {
-                  bindings = <
-        &kp ESC       &kp Q &kp W &kp E    &kp R       &kp T                                                                          &kp Y            &kp U     &kp I     &kp O    &kp P     &kp LBKT
-        &kp LCTRL     &kp A &kp S &kp D    &kp F       &kp G                                                                          &kp H            &kp J     &kp K     &kp L    &kp SEMI  &kp SQT
-        &kp LALT      &kp Z &kp X &kp C    &kp V       &kp B   &kp CAPS                                            &lt NUM LG(SPACE)  &kp N            &kp M     &kp COMMA &kp DOT  &kp FSLH  &kp RBKT
-                                  &kp LGUI &kp ENTER &kp TAB &kp SPACE &kp LSHIFT                    &lt LOWER ESC &mt RSHFT BSPC     &lt RAISE ENTER  &kp LG(SPACE) &mt RALT BSLH
-                  >;
-                };
+
         default_layer {
           bindings = <
 &kp GRAVE     &kp Q &kp W &kp E    &kp R       &kp T                                                                           &kp Y            &kp U     &kp I     &kp O    &kp P     &kp LBKT
@@ -34,6 +27,14 @@
 &kp LALT      &kp Z &kp X &kp C    &kp V       &kp B         &mo NUM                                        &lt NUM LG(SPACE)  &kp N            &kp M     &kp COMMA &kp DOT  &kp FSLH  &kp RBKT
                           &kp LGUI &kp LS(TAB) &lt RAISE TAB &mt LSHFT SPACE &lt LOWER DEL    &lt LOWER ESC &mt RSHFT BSPC     &lt RAISE ENTER  &kp LG(SPACE) &mt RALT BSLH
             >;
+        };
+  game_layer {
+          bindings = <
+&kp ESC       &kp Q &kp W &kp E    &kp R       &kp T                                                                          &kp Y            &kp U     &kp I     &kp O    &kp P     &kp LBKT
+&kp LCTRL     &kp A &kp S &kp D    &kp F       &kp G                                                                          &kp H            &kp J     &kp K     &kp L    &kp SEMI  &kp SQT
+&kp LALT      &kp Z &kp X &kp C    &kp V       &kp B   &kp CAPS                                            &lt NUM LG(SPACE)  &kp N            &kp M     &kp COMMA &kp DOT  &kp FSLH  &kp RBKT
+                          &trans &kp ENTER &kp TAB &kp SPACE &kp LSHIFT                     &trans  &trans      &trans  &kp LG(SPACE) &mt RALT BSLH
+          >;
         };
         lower_layer {
           bindings = <
@@ -51,6 +52,8 @@
                                   &trans    &trans        &trans       &trans &lt THIRD DEL     &lt THIRD ESC  &trans  &trans     &trans    &trans
           >;
         };
+
+
         num_layer {
  bindings = <
 &kp RA(GRAVE)  &kp KP_SLASH      &kp KP_N7   &kp KP_N8  &kp KP_N9  &kp KP_MINUS                                  &kp RA(T)  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans         &kp RA(LBKT)
@@ -68,7 +71,6 @@
                                     &sys_reset    &bootloader   &trans      &trans   &trans    &trans  &trans  &trans &bootloader  &sys_reset
           >;
         };
-
 
     };
 };
